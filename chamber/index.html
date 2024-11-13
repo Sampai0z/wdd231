@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="WDD 231 - Web Frontend Development - Vitor Sampaio. Home page."
+    />
+    <meta name="author" content="Vitor Sampaio" />
+    <title>WDD 231 - Course Home - Vitor Sampaio</title>
+    <link rel="stylesheet" href="styles/base.css" />
+    <script src="scripts/menu.js" defer></script>
+    <script src="scripts/dates.js" defer></script>
+    <script src="scripts/courses.js" defer></script>
+  </head>
+  <body>
+    <header class="header">
+      <img src="./images/vitor.jpg" alt="" />
+      <h2>Vitor R. Sampaio</h2>
+      <button id="menu-toggle">☰</button>
+    </header>
+
+    <nav>
+      <ul id="menu">
+        <li>
+          <a href="index.html"><h2>Home</h2></a>
+        </li>
+        <li>
+          <a href="chamber.html"><h2>Chamber</h2></a>
+        </li>
+        <li>
+          <a href="https://github.com/Sampai0z"><h2>GitHub Profile</h2></a>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/in/vitorpt/"><h2>LinkedIn</h2></a>
+        </li>
+      </ul>
+    </nav>
+
+    <main>
+      <section>
+        <h2>About the Course</h2>
+        <p>
+          This course covers web fundamentals with a focus on responsive design,
+          accessibility, and performance optimization.
+        </p>
+      </section>
+
+      <section>
+        <h2>Certificate Courses</h2>
+        <div id="course-buttons" class="buttons">
+          <button onclick="showAllCourses()">All Courses</button>
+          <button onclick="showWDCCourses()">WDD Courses</button>
+          <button onclick="showCSECourses()">CSE Courses</button>
+        </div>
+        <div id="courses-list"></div>
+        <p>Total Credits: <span id="total-credits"></span></p>
+      </section>
+
+      <section>
+        <h2>Weekly Overview</h2>
+        <p>
+          Review assignments, projects, and resources each week to stay on
+          track.
+        </p>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; <span id="year"></span> Vitor Sampaio, Brazil</p>
+      <p id="lastModified"></p>
+    </footer>
+  </body>
+</html>
