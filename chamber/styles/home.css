@@ -36,6 +36,9 @@ footer {
   flex-direction: column;
   gap: 20px;
 }
+.hero img {
+  width: 100%;
+}
 .cta-link {
   background-color: #35708ac6;
   padding: 15px;
