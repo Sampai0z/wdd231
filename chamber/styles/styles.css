@@ -107,84 +107,86 @@ button:active {
     display: flex;
   }
 }
-
-.course-item {
-  border: 1px solid #ddd;
-  padding: 1em;
-  margin-bottom: 1em;
-  width: 150px;
-}
-
-.course-item.completed {
-  background-color: #e0ffe0;
-}
-
-#courses-list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 1rem;
-}
-
-/* Members */
-#member-list {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr); /* 3 colunas por padrão */
-  gap: 20px;
-  padding: 20px;
-  justify-items: center;
-}
-
-/* Cards de membros */
-.member-card {
-  width: 100%; /* Ajusta a largura para preencher a coluna */
-  max-width: 300px; /* Limita a largura máxima dos cards */
-  padding: 15px;
-  margin: 15px;
-  background-color: #f9f9f9;
-  border: 1px solid #ddd;
-  border-radius: 8px;
+.menu {
+  margin: 1rem auto;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 0.5rem;
+  background-color: #bed;
   text-align: center;
 }
 
-.member-card img {
-  width: 100px;
-  height: auto;
-  margin-bottom: 10px;
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 1.5rem;
+  align-items: center;
+  border: 1px solid;
+  padding: 5px;
 }
 
-.member-card h3 {
-  font-size: 1.5em;
-  margin-bottom: 10px;
+.grid section {
+  text-align: center;
 }
 
-.member-card p {
-  font-size: 1em;
-  margin: 5px 0;
+.grid img {
+  border: 1px solid #fff;
+  box-shadow: 0 0 10px #333;
 }
 
-.member-card a {
-  color: #007bff;
-  text-decoration: none;
+.grid section > * {
+  margin: 0.1rem;
 }
 
-.member-card a:hover {
-  text-decoration: underline;
+.grid h3 {
+  font-family: "Caveat", cursive;
 }
 
-/* Responsividade para telas menores (até 768px) */
-@media (max-width: 768px) {
-  #member-list {
-    grid-template-columns: repeat(
-      2,
-      1fr
-    ); /* 2 colunas para telas médias (como tablets) */
-  }
+.list {
+  display: flex;
+  flex-direction: column;
 }
 
-/* Responsividade para telas muito pequenas (até 480px) */
-@media (max-width: 480px) {
-  #member-list {
-    grid-template-columns: 1fr; /* 1 coluna para telas pequenas (smartphones) */
-  }
+.list section {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  margin: 0;
+  padding: 0.25rem;
+}
+
+.list section > * {
+  margin: 0 1rem;
+}
+
+.list section img {
+  display: none; /* smaller viewports only */
+}
+
+.list section h3 {
+  font-size: 1rem;
+  font-family: Roboto, Helvetica, sans-serif;
+}
+
+.list section:nth-child(even) {
+  background-color: #bed;
+}
+
+section h3 {
+  font-size: 1.5rem;
+}
+
+section p {
+  font-weight: 600;
+  font-size: smaller;
+}
+
+section a {
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 0.85rem;
+  color: navy;
+  letter-spacing: 1.1pt;
+}
+
+img {
+  height: 75px;
+  max-width: 100%; /* Images are jerks - Seattle*/
 }
