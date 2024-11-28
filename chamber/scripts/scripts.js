@@ -41,9 +41,7 @@ async function fetchMembers() {
         <p><strong>Address:</strong> ${member.address}</p>
         <p><strong>Phone:</strong> ${member.phone}</p>
         <p><strong>Website:</strong> <a href="${member.website}" target="_blank">${member.website}</a></p>
-        <p><strong>Membership Level:</strong> ${member.membership_level}</p>
-        <p>${member.description}</p>
-      `;
+       `;
       memberList.appendChild(card);
     });
   } catch (error) {

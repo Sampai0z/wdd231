@@ -117,13 +117,22 @@ button:active {
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(200px, 3fr));
   grid-gap: 1.5rem;
   align-items: center;
   border: 1px solid;
   padding: 5px;
 }
-
+@media (max-width: 768px) {
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 1.5rem;
+    align-items: center;
+    border: 1px solid;
+    padding: 5px;
+  }
+}
 .grid section {
   text-align: center;
 }
@@ -151,6 +160,14 @@ button:active {
   grid-template-columns: 2fr 1fr 1fr;
   margin: 0;
   padding: 0.25rem;
+}
+@media (max-width: 768px) {
+  .list section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    margin: 0;
+    padding: 0.25rem;
+  }
 }
 
 .list section > * {
