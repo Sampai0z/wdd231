@@ -1,0 +1,190 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  line-height: 1.6;
+}
+
+header,
+footer {
+  background: #185873;
+  color: #fff;
+  text-align: center;
+  padding: 1.5em;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+}
+
+img {
+  border-radius: 10px;
+}
+
+nav ul {
+  display: flex;
+  list-style-type: none;
+  justify-content: center;
+}
+
+nav ul li {
+  margin: 0 1em;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+#menu-toggle {
+  display: none;
+}
+
+main {
+  padding: 1em;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  padding: 10px 20px;
+  color: #ffffff; /* Cor padrão */
+  background-color: #000000;
+  border: 0;
+  border-radius: 10px;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+button:active {
+  cursor: pointer;
+}
+
+.active {
+  flex-direction: row;
+  background-color: #423333; /* Cor ao clicar */
+}
+
+@media (max-width: 768px) {
+  nav ul {
+    display: none;
+    flex-direction: column;
+  }
+
+  #menu-toggle {
+    display: block;
+    background: #444;
+    color: #fff;
+    padding: 1em;
+    cursor: pointer;
+  }
+
+  #menu.show {
+    display: flex;
+  }
+}
+
+.course-item {
+  border: 1px solid #ddd;
+  padding: 1em;
+  margin-bottom: 1em;
+  width: 150px;
+}
+
+.course-item.completed {
+  background-color: #e0ffe0;
+}
+
+#courses-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+/* Members */
+#member-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 colunas por padrão */
+  gap: 20px;
+  padding: 20px;
+  justify-items: center;
+}
+
+/* Cards de membros */
+.member-card {
+  width: 100%; /* Ajusta a largura para preencher a coluna */
+  max-width: 300px; /* Limita a largura máxima dos cards */
+  padding: 15px;
+  margin: 15px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.member-card img {
+  width: 100px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.member-card h3 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.member-card p {
+  font-size: 1em;
+  margin: 5px 0;
+}
+
+.member-card a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.member-card a:hover {
+  text-decoration: underline;
+}
+
+/* Responsividade para telas menores (até 768px) */
+@media (max-width: 768px) {
+  #member-list {
+    grid-template-columns: repeat(
+      2,
+      1fr
+    ); /* 2 colunas para telas médias (como tablets) */
+  }
+}
+
+/* Responsividade para telas muito pequenas (até 480px) */
+@media (max-width: 480px) {
+  #member-list {
+    grid-template-columns: 1fr; /* 1 coluna para telas pequenas (smartphones) */
+  }
+}
