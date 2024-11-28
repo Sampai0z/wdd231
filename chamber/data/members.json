@@ -4,7 +4,8 @@
     "address": "123 Tech Avenue, Sun City, SC 12345",
     "phone": "(555) 123-4567",
     "website": "https://www.sunrisetech.com",
-    "image": "sunrise_tech_logo.png",
+    "image": "./company_logos/sunrise_tech_logo.png",
+    "membership_level": 3,
     "description": "A leading technology solutions provider offering innovative software development."
   },
   {
@@ -12,7 +13,8 @@
     "address": "456 Green Rd, Meadowbrook, MB 67890",
     "phone": "(555) 987-6543",
     "website": "https://www.greenearthlandscaping.com",
-    "image": "green_earth_logo.png",
+    "image": "./company_logos/green_earth_logo.png",
+    "membership_level": 2,
     "description": "Professional landscaping and gardening services to transform your outdoor spaces."
   },
   {
@@ -20,7 +22,8 @@
     "address": "789 Wave Blvd, Oceanview, OV 13579",
     "phone": "(555) 321-7654",
     "website": "https://www.bluewavemarketing.com",
-    "image": "blue_wave_logo.png",
+    "image": "./company_logos/blue_wave_logo.png",
+    "membership_level": 1,
     "description": "Digital marketing agency specializing in SEO, content strategy, and paid advertising."
   },
   {
@@ -28,7 +31,8 @@
     "address": "101 Summit Rd, Rocky Mountain, RM 24680",
     "phone": "(555) 654-3210",
     "website": "https://www.mountainpeakadventures.com",
-    "image": "mountain_peak_logo.png",
+    "image": "./company_logos/mountain_peak_logo.png",
+    "membership_level": 2,
     "description": "Adventure travel agency offering guided tours through the world's most rugged landscapes."
   },
   {
@@ -36,7 +40,8 @@
     "address": "202 Riverbank St, Capital City, CC 98765",
     "phone": "(555) 432-1098",
     "website": "https://www.riverbankfinancial.com",
-    "image": "riverbank_logo.png",
+    "image": "./company_logos/riverbank_logo.png",
+    "membership_level": 3,
     "description": "Financial planning and investment services to help you achieve your long-term goals."
   },
   {
@@ -44,7 +49,8 @@
     "address": "303 Skyline Ave, Uptown, UT 11111",
     "phone": "(555) 876-5432",
     "website": "https://www.cityscapearchitecture.com",
-    "image": "cityscape_logo.png",
+    "image": "./company_logos/cityscape_logo.png",
+    "membership_level": 2,
     "description": "Architecture firm specializing in modern designs and sustainable building practices."
   },
   {
@@ -52,7 +58,8 @@
     "address": "404 Celebration Way, Star City, SC 22222",
     "phone": "(555) 222-3333",
     "website": "https://www.starlightevents.com",
-    "image": "starlight_logo.png",
+    "image": "./company_logos/starlight_logo.png",
+    "membership_level": 1,
     "description": "Full-service event planning agency offering services for weddings, corporate events, and more."
   }
 ]

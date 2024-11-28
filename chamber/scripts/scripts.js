@@ -33,6 +33,7 @@ async function fetchMembers() {
 
     // Render member cards
     members.forEach((member) => {
+      console.log(member.name);
       const card = document.createElement("section");
       card.classList.add("grid");
       card.innerHTML = `
