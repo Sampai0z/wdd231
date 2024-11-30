@@ -109,24 +109,7 @@ main {
 .weather > ul > li {
   list-style: none;
 }
-@media (max-width: 768px) {
-  nav ul {
-    display: none;
-    flex-direction: column;
-  }
 
-  #menu-toggle {
-    display: block;
-    background: #444;
-    color: #fff;
-    padding: 1em;
-    cursor: pointer;
-  }
-
-  #menu.show {
-    display: flex;
-  }
-}
 .menu {
   margin: 1rem auto;
   border: 1px solid rgba(0, 0, 0, 0.1);
@@ -176,4 +159,122 @@ main {
 .spotlight-card a {
   color: #007bff;
   text-decoration: none;
+}
+
+/* Join Page */
+
+.membership-cards {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.card {
+  background-color: #f5f5f5;
+  padding: 20px;
+  border-radius: 8px;
+  transition: transform 0.5s ease-in-out, background-color 0.5s ease-in-out;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  background-color: #e0e0e0;
+}
+
+/* Modal styles */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+  background-color: #fff;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.joinPage {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+  margin: 1.5rem;
+}
+
+form {
+  gap: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+input {
+  width: 100%;
+  height: 30px;
+}
+label {
+  width: 100%;
+}
+
+/* Thank You page */
+.completedApplication {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.listApplication {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  margin-bottom: 5rem;
+}
+
+@media (max-width: 768px) {
+  nav ul {
+    display: none;
+    flex-direction: column;
+  }
+
+  #menu-toggle {
+    display: block;
+    background: #444;
+    color: #fff;
+    padding: 1em;
+    cursor: pointer;
+  }
+
+  #menu.show {
+    display: flex;
+  }
+
+  .joinPage {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  input {
+    width: 100%;
+  }
 }

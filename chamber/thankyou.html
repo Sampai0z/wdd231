@@ -5,14 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="WDD 231 - Web Frontend Development - Vitor Sampaio. Directory page."
+      content="WDD 231 - Web Frontend Development - Vitor Sampaio. Home page."
     />
     <link rel="icon" href="images/favicon.ico" />
     <meta name="author" content="Vitor Sampaio" />
     <title>WDD 231 - Chamber of Commerce - Vitor Sampaio</title>
-    <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="stylesheet" href="styles/home.css" />
     <script src="scripts/menu.js" defer></script>
-    <script src="scripts/scripts.js" defer></script>
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
@@ -55,17 +54,34 @@
       </nav>
     </header>
     <main>
-      <section>
-        <h2>Chamber Directory</h2>
-        <p>
-          Explore the local businesses and connect with our community members.
-        </p>
-        <div class="menu">
-          <button id="grid">Grid View</button>
-          <button id="list">List View</button>
-        </div>
-        <div id="member-list" class="grid"></div>
-      </section>
+      <div class="completedApplication">
+        <h1>Thank You for Your Application!</h1>
+        <p>Your application has been submitted successfully.</p>
+        <h2>Application Details:</h2>
+      </div>
+
+      <ul class="listApplication">
+        <li><strong>First Name:</strong> <span id="firstName"></span></li>
+        <li><strong>Last Name:</strong> <span id="lastName"></span></li>
+        <li><strong>Email:</strong> <span id="email"></span></li>
+        <li><strong>Phone:</strong> <span id="phone"></span></li>
+        <li><strong>Organization:</strong> <span id="organization"></span></li>
+        <li><strong>Submission Time:</strong> <span id="timestamp"></span></li>
+      </ul>
+
+      <script>
+        const params = new URLSearchParams(window.location.search);
+        document.getElementById("firstName").textContent =
+          params.get("firstName");
+        document.getElementById("lastName").textContent =
+          params.get("lastName");
+        document.getElementById("email").textContent = params.get("email");
+        document.getElementById("phone").textContent = params.get("phone");
+        document.getElementById("organization").textContent =
+          params.get("organization");
+        document.getElementById("timestamp").textContent =
+          params.get("timestamp");
+      </script>
     </main>
     <footer>
       <p>&copy; <span id="year"></span> Vitor Sampaio, Brazil</p>
