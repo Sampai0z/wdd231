@@ -207,3 +207,62 @@ img {
   height: 75px;
   max-width: 100%; /* Images are jerks - Seattle*/
 }
+
+/* Discover Page */
+
+.discover-layout {
+  display: grid;
+  grid-template-columns: 1fr 3fr; /* Sidebar: 1/4, Gallery: 3/4 */
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.sidebar {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+.sidebar h2 {
+  margin-bottom: 0.5rem;
+}
+
+.sidebar img {
+  max-width: 100%;
+  border-radius: 8px;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+.gallery img {
+  height: 50%;
+  width: 100%;
+  border-radius: 8px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.gallery img:hover {
+  transform: scale(1.1);
+}
+
+figcaption {
+  text-align: center;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .discover-layout {
+    grid-template-columns: 1fr; /* Layout em coluna única */
+  }
+
+  .gallery img:hover {
+    transform: none; /* Desativar efeito no mobile */
+  }
+}

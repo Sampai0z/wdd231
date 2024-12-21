@@ -52,3 +52,37 @@ async function fetchMembers() {
 
 // Fetch members when page loads
 document.addEventListener("DOMContentLoaded", fetchMembers);
+
+// Discover Page
+const currentTime = Date.now(); // Tempo atual em milissegundos
+const lastVisit = localStorage.getItem("lastVisit"); // Recupera o valor do localStorage
+const sidebar = document.querySelector(".sidebar");
+let message;
+
+if (!lastVisit) {
+  // Caso seja a primeira visita
+  message = "Welcome! Let us know if you have any questions.";
+  localStorage.setItem("lastVisit", currentTime); // Armazena o horário atual
+} else {
+  // Calcula os dias desde a última visita
+  const daysSinceLastVisit = Math.floor(
+    (currentTime - lastVisit) / (1000 * 60 * 60 * 24)
+  );
+
+  if (daysSinceLastVisit < 1) {
+    message = "Back so soon! Awesome!";
+  } else {
+    message = `You last visited ${daysSinceLastVisit} day${
+      daysSinceLastVisit > 1 ? "s" : ""
+    } ago.`;
+  }
+
+  // Atualiza o horário da última visita no localStorage
+  localStorage.setItem("lastVisit", currentTime);
+}
+
+// Adicione a mensagem ao início da sidebar
+const messageDiv = document.createElement("div");
+messageDiv.textContent = message;
+messageDiv.style.marginBottom = "1rem";
+sidebar.insertBefore(messageDiv, sidebar.firstChild);

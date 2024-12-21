@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="WDD 231 - Web Frontend Development - Vitor Sampaio. Directory page."
+    />
+    <link rel="icon" href="images/favicon.ico" />
+    <meta name="author" content="Vitor Sampaio" />
+    <title>WDD 231 - Chamber of Commerce - Vitor Sampaio</title>
+    <link rel="stylesheet" href="styles/styles.css" />
+    <script src="scripts/menu.js" defer></script>
+    <script src="scripts/scripts.js" defer></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <meta
+      property="og:title"
+      content="Sunridge Chamber of Commerce - Vitor Sampaio"
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="./images/logo.webp" />
+    <meta property="og:url" content="https://sunridgechamber.com" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="flex">
+        <img
+          src="./images/logo.webp"
+          alt="Sunridge Chamber of Commerce"
+          width="100px"
+        />
+        <h1>Sunridge</h1>
+      </div>
+      <nav>
+        <button id="menu-toggle">☰</button>
+        <ul id="menu">
+          <li>
+            <a href="index.html"><h2>Home</h2></a>
+          </li>
+          <li>
+            <a href="directory.html"><h2>Directory</h2></a>
+          </li>
+          <li>
+            <a href="join.html"><h2>Join</h2></a>
+          </li>
+          <li>
+            <a href="discover.html"><h2>Discover</h2></a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <div class="discover-layout">
+      <!-- Sidebar -->
+      <aside class="sidebar">
+        <section>
+          <h2>Heading</h2>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae ex
+            delectus a voluptatibus tempore aspernatur ratione, ipsa autem nisi
+            laboriosam aliquid eum minima eius saepe commodi exercitationem
+            natus animi qui.
+          </p>
+        </section>
+        <section>
+          <h2>Heading</h2>
+          <img
+            src="images/company_logos/sunrise_tech_logo.png"
+            alt="Descriptive Alt Text"
+          />
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia,
+            adipisci voluptate! Fugit illum exercitationem libero iste optio
+            consectetur odit unde! Omnis blanditiis quo odio veniam modi magnam
+            doloribus perspiciatis laboriosam.
+          </p>
+        </section>
+        <section>
+          <h2>Calendar</h2>
+          <div class="calendar">
+            <p>June 24, 2024</p>
+            <table>
+              <tr>
+                <th>Su</th>
+                <th>Mo</th>
+                <th>Tu</th>
+                <th>We</th>
+                <th>Th</th>
+                <th>Fr</th>
+                <th>Sa</th>
+              </tr>
+              <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+                <td>5</td>
+                <td>6</td>
+                <td>7</td>
+              </tr>
+            </table>
+          </div>
+        </section>
+      </aside>
+      <main class="gallery">
+        <figure>
+          <img
+            src="images/company_logos/starlight_logo.png"
+            alt="Image 1 Description"
+            loading="lazy"
+          />
+          <figcaption>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus
+            temporibus nisi dignissimos officia error, omnis minus cupiditate
+            saepe distinctio porro aperiam, earum corrupti id eos ad alias sit
+            sequi quasi?
+          </figcaption>
+        </figure>
+        <figure>
+          <img
+            src="images/company_logos/blue_wave_logo.png"
+            alt="Image 2 Description"
+            loading="lazy"
+          />
+          <figcaption>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus
+            temporibus nisi dignissimos officia error, omnis minus cupiditate
+            saepe distinctio porro aperiam, earum corrupti id eos ad alias sit
+            sequi quasi?
+          </figcaption>
+        </figure>
+        <figure>
+          <img
+            src="images/company_logos/riverbank_logo.png"
+            alt="Image 3 Description"
+            loading="lazy"
+          />
+          <figcaption>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus
+            temporibus nisi dignissimos officia error, omnis minus cupiditate
+            saepe distinctio porro aperiam, earum corrupti id eos ad alias sit
+            sequi quasi?
+          </figcaption>
+        </figure>
+      </main>
+    </div>
+    <footer>
+      <p>&copy; <span id="year"></span> Vitor Sampaio, Brazil</p>
+      <p id="lastModified"></p>
+    </footer>
+  </body>
+</html>
