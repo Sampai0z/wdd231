@@ -1,0 +1,332 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+#menu-toggle {
+  display: none;
+}
+.menu {
+  margin: 1rem auto;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 0.5rem;
+  background-color: #bed;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  header nav ul {
+    justify-items: center;
+    align-items: end;
+    display: none;
+    flex-direction: column;
+  }
+
+  #menu-toggle {
+    display: block;
+    background: #444;
+    color: #fff;
+    padding: 1em;
+    cursor: pointer;
+  }
+
+  #menu.show {
+    display: flex;
+  }
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+}
+
+header .logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+header .logo {
+  width: 50px;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.hero {
+  background-color: #f4f4f4;
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.hero h2 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.hero .btn {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.hero .btn:hover {
+  background-color: #0056b3;
+}
+
+.featured-games {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.featured-games h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.game-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.game-container .game {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  width: 250px;
+  padding: 20px;
+  text-align: center;
+}
+
+.game-container .game img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.game-container .game h3 {
+  font-size: 1.2rem;
+  margin-top: 10px;
+}
+
+.game-container .game p {
+  margin-top: 10px;
+  font-size: 0.9rem;
+}
+
+.cta {
+  background-color: #007bff;
+  color: white;
+  text-align: center;
+  padding: 50px 20px;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+}
+/* CONSOLE PAGE */
+/* Consoles Container */
+.consoles-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+/* Console Card */
+.console-card {
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  width: 280px;
+  text-align: center;
+  padding: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+/* Console Image */
+.console-card img {
+  max-width: 100%;
+  border-radius: 8px;
+  object-fit: cover;
+  height: 200px;
+}
+
+/* Console Title */
+.console-card h2 {
+  font-size: 1.8em;
+  margin: 15px 0;
+  color: #333;
+}
+
+/* Console Description */
+.console-card p {
+  font-size: 1.1em;
+  color: #777;
+  margin: 10px 0;
+}
+
+/* Console Price */
+.console-card .price {
+  font-size: 1.3em;
+  color: #333;
+  margin: 10px 0;
+  font-weight: bold;
+}
+
+/* Add to Cart Button */
+.console-card button {
+  padding: 12px 20px;
+  font-size: 1em;
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 100%;
+}
+
+.console-card button:hover {
+  background-color: #555;
+}
+
+/* Hover Effect */
+.console-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .consoles-container {
+    gap: 15px;
+  }
+
+  .console-card {
+    width: 100%;
+    max-width: 350px;
+  }
+}
+
+@media (max-width: 480px) {
+  .console-card {
+    width: 100%;
+    padding: 15px;
+  }
+
+  .console-card h2 {
+    font-size: 1.6em;
+  }
+
+  .console-card .price {
+    font-size: 1.1em;
+  }
+
+  .console-card button {
+    font-size: 0.9em;
+  }
+}
+
+/* GAMES PAGE */
+.games-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.game-card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 250px;
+  text-align: center;
+  padding: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.game-card img {
+  max-width: 100%;
+  border-radius: 8px;
+  height: 150px;
+  object-fit: cover;
+}
+
+.game-card h3 {
+  font-size: 1.5em;
+  margin: 10px 0;
+}
+
+.game-card p {
+  font-size: 1em;
+  color: #777;
+}
+
+.game-card .price {
+  font-size: 1.2em;
+  color: #333;
+  margin: 10px 0;
+}
+
+.game-card button {
+  padding: 12px 20px;
+  font-size: 1em;
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.game-card button:hover {
+  background-color: #555;
+}
+
+.game-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.original-price {
+  text-decoration: line-through;
+  color: #888;
+}
+
+.discount-price {
+  color: #e74c3c;
+  font-weight: bold;
+}

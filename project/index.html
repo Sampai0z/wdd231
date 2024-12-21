@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="A video game store website featuring games for sale, consoles, and more."
+    />
+    <meta name="author" content="Vitor Sampaio" />
+    <meta property="og:title" content="Video Game Store - Games & Consoles" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="images/logo.png" />
+    <meta property="og:url" content="https://videogamestore.com" />
+    <title>Video Game Store | Home</title>
+    <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+    <script src="scripts/main.js" defer></script>
+    <script src="scripts/menu.js" defer></script>
+  </head>
+  <body>
+    <header class="header">
+      <button id="menu-toggle">☰</button>
+      <nav>
+        <ul id="menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="games.html">Games</a></li>
+          <li><a href="consoles.html">Consoles</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <img src="./images/hero.png" alt="" width="100%" />
+        <h2>Welcome to the Ultimate Game Store</h2>
+        <p>Find the best games, consoles, and accessories here!</p>
+        <br />
+        <a href="#" class="btn">Shop Now</a>
+      </section>
+
+      <section class="featured-games">
+        <h2>Most Selling Games</h2>
+        <div class="game-container" id="games-container"></div>
+      </section>
+
+      <section class="cta">
+        <h2>Ready to Play?</h2>
+        <p>Shop the latest games and consoles now!</p>
+        <a href="#" class="btn">Explore Games</a>
+      </section>
+    </main>
+    <footer>
+      <p>&copy; 2024 Video Game Store. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
